@@ -1,0 +1,143 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(''); 
+  background-position: center;
+  font-family: Arial, sans-serif; 
+  background-size: cover;
+}
+
+.header {
+  background-color: #4CAF50; /* Màu xanh lá cây */
+  color: #fff;
+  padding: 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Hiệu ứng bóng */
+  font-size: 20px;
+}
+
+.nav a:hover {
+  color: #010f01; /* Thay đổi màu khi hover */
+}
+
+.logo {
+  width: 50px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav li {
+  margin-right: 20px;
+}
+
+.nav a {
+  color: #f2f7f8;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Hiệu ứng chuyển đổi màu */
+}
+
+.nav a:hover,
+.nav a:focus {
+  color: #030b1c; /* Màu xanh lá cây khi hover hoặc focus */
+}
+
+.content {
+  text-align: center;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.content {
+  font-family: 'Roboto', sans-serif; /* Chọn font chữ */
+}
+
+.content h1 {
+  font-size: 48px; /* Tăng kích thước font chữ */
+  color: #0bae3a; /* Màu sắc nổi bật */
+  text-transform: uppercase; /* Chuyển đổi thành chữ hoa */
+  font-weight: bold; /* Độ đậm của font chữ */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Hiệu ứng bóng */
+}
+
+.content p {
+  font-size: 24px; /* Tăng kích thước font chữ */
+  color: #333; /* Màu sắc chính */
+}
+
+
+.content {
+  padding: 40px;
+  text-align: center;
+}
+
+.content h1 {
+  margin-top: 0;
+}
+
+.content p {
+  margin-bottom: 20px;
+}
+
+/* CSS cho trang chủ */
+/* Thêm CSS tùy chỉnh cho nút Login và Sign Up */
+.buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* CSS cho nút Login */
+.buttons #login-btn {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #FF5733; /* Màu đỏ */
+  color: white;
+  cursor: pointer;
+  font-size: 18px; /* Tăng kích thước chữ */
+  font-weight: bold; /* Đặt chữ in đậm */
+  transition: background-color 0.3s; /* Hiệu ứng màu nền khi hover */
+}
+
+/* CSS cho nút Sign Up */
+.buttons #signup-btn {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db; /* Màu xanh dương */
+  color: white;
+  cursor: pointer;
+  font-size: 18px; /* Tăng kích thước chữ */
+  font-weight: bold; /* Đặt chữ in đậm */
+  transition: background-color 0.3s, opacity 0.3s; /* Hiệu ứng màu nền khi hover */
+}
+
+.buttons button:hover {
+  background-color: #000000; /* Thay đổi màu nền khi hover */
+  opacity: 0.8; /* Hiệu ứng khi hover */
+}
+
+.buttons button:active {
+  background-color: #090f09; /* Thay đổi màu nền khi nút được nhấn */
+}

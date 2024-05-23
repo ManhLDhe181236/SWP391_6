@@ -52,6 +52,18 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- them thu vien dotenv cho du an de ket noi sql -->
+		<dependency>
+			<groupId>io.github.cdimascio</groupId>
+			<artifactId>java-dotenv</artifactId>
+			<version>2.2.0</version> 
+		</dependency>
+			<dependency>
+			<groupId>com.microsoft.sqlserver</groupId>
+			<artifactId>mssql-jdbc</artifactId>
+			<version>9.4.0.jre8</version> 
+		</dependency>
+
 	</dependencies>
 
 	<build>
