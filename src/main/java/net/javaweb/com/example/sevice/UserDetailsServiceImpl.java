@@ -1,4 +1,4 @@
-package com.example.sevice;
+package net.javaweb.com.example.sevice;
 
 public class UserDetailsServiceImpl {
 
