@@ -1,13 +1,11 @@
 package net.javaweb.swp391_g6;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.SpringApplication;
 
 public class DatabaseConnectionTest  {
 
@@ -24,9 +22,4 @@ public class DatabaseConnectionTest  {
             fail("connected fail " + e.getMessage());
         }
     }
-    
-    public static void main(String[] args) {
-		testDatabaseConnection() ;
-		
-	}
 }
