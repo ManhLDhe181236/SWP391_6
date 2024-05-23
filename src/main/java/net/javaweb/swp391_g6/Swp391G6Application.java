@@ -8,6 +8,7 @@ public class Swp391G6Application {
 
 	public static void main(String[] args) {
 		SpringApplication.run(Swp391G6Application.class, args);
+		
 	}
 
 }
