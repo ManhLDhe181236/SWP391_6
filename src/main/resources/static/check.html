@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SWP </title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+        <a href="#" class="nav_logo">ExamOnline</a>
+
+        <ul class="nav_items">
+          <li class="nav_item">
+            <a href="#home" class="nav_link">Home</a>
+                <a href="#hero" class="nav_link">About</a>
+                <a href="#features" class="nav_link">Services</a>
+                <a href="#" class="nav_link">Contact</a>
+          </li>
+        </ul>
+
+        <button class="button" id="form-open">Login</button>
+      </nav>
+    </header>
+
+    <!-- login form  -->
+    <section class="home">
+      <div class="form_container">
+        <i class="uil uil-times form_close"></i>
+        <!-- Login From -->
+        <div class="form login_form">
+          <form action="LoginServlet" method="POST">
+            <h2>Login</h2>
+
+            <div class="input_box">
+              <input type="text" name="name" placeholder="Enter your username" required />
+              <i class="uil uil-envelope-alt email"></i>
+            </div>
+            <div class="input_box">
+              <input type="password" name ="pass" placeholder="Enter your password" required />
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+
+            <div class="option_field">
+              <span class="checkbox">
+                <input id="check" type="submit" name="submit"/>
+              </span>
+              <a href="home.html" class="forgot_pw">Forgot password?</a>
+            </div>
+
+            <button class="button">Login Now</button>
+
+            <div class="login_signup">Don't have an account? <a href="home.html" id="signup">Signup</a></div>
+          </form>
+        </div>
+    </div>
+    </section>
+    <script src="script.js"></script>
+
+    <!-- login form  -->
+
+
+    <!-- main  -->
+    <main>
+
+      <section class="hero">
+            <h1 class = "fire"> </h1>
+            <h1 class = "nie"> Master Your Exams<br>Anytime, Anywhere</h1>
+            
+            <p>Discover a seamless way to prepare for exams with our comprehensive online <br>resources designed for your success.</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn">Join Now</a>
+                <a href="#" class="btn-secondary">Enroll Today</a>
+            </div>
+
+        <div class="hero-image">
+            <img src="imagine/qwgs07r7weogauqy59il.jpg" alt="hero image">
+        </div>
+
+      </section>
+
+      
+      <section class="features" id="features">
+
+        <div class="feature">
+            <img src="imagine/Screenshot 2024-06-04 094043.png" alt="Easy Access Icon">
+            <h2>Easy Access</h2>
+            <p>Prepare for your exams at any time.</p>
+        </div>
+        <div class="feature">
+            <img src="imagine/Screenshot 2024-06-04 094100.png" alt="Interactive Tools Icon">
+            <h2>Interactive Tools</h2>
+            <p>Use advanced tools to aid learning.</p>
+        </div>
+        <div class="feature">
+            <img src="imagine/Screenshot 2024-06-04 094119.png" alt="Expert Guidance Icon">
+            <h2>Expert Guidance</h2>
+            <p>Get tips from experienced educators.</p>
+        </div>
+    </section>
+
+
+    
+
+    <section class="why-choose" id ="why-choose">
+      <p>Why Choose ExamOnline</p>
+      <h1>Achieve Excellence with </h1>
+      <h1>ExamOnline’s Premium</h1>
+      <h1>Features</h1>
+  </section>
+
+
+  <section class="feature-section">
+      <div class="features-left">
+          <div class="feature-item">
+              <img src="lo/Screenshot 2024-06-04 101127.png" alt="Personal Dashboard Icon">
+              <div class="feature-text">
+                  <h2>Personal Dashboard</h2>
+                  <p>Track progress and manage study <br>schedules.</p>
+                  
+              </div>
+          </div>
+          <div class="feature-item">
+              <img src="lo/Screenshot 2024-06-04 101145.png" alt="Mock Exams Icon">
+              <div class="feature-text">
+                  <h2>Mock Exams</h2>
+                  <p>Simulate real exam conditions easily.</p>
+              </div>
+          </div>
+          <div class="feature-item">
+              <img src="lo/Screenshot 2024-06-04 101206.png" alt="24/7 Support Icon">
+              <div class="feature-text">
+                  <h2>24/7 Support</h2>
+                  <p>Get help whenever you need it.</p>
+              </div>
+          </div>
+      </div>
+      <div class="features-right" >
+          <img src="lo/ega1g2jxg6c2viot3c6o.jpg" alt="Stack of Books Image">
+      </div>
+      
+  </section>
+
+
+
+    </main>
+
+
+
+    <script>
+      
+      document.addEventListener('DOMContentLoaded', function() {
+    const links = document.querySelectorAll('.nav_link');
+
+    links.forEach(link => {
+        link.addEventListener('click', function(event) {
+            // Prevent the default action
+            event.preventDefault();
+
+            // Get the target section's ID from the href attribute
+            const targetId = this.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+                // Scroll to the target section smoothly
+                targetSection.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            } else if (targetId === 'home') {
+                // Scroll to the top of the page if 'home' is the target
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+});
+
+      
+
+
+
+
+      
+  </script>
+  </body>
+</html>
