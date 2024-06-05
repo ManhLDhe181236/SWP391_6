@@ -21,7 +21,7 @@
             <a href="#home" class="nav_link">Home</a>
                 <a href="#hero" class="nav_link">About</a>
                 <a href="#features" class="nav_link">Services</a>
-                <a href="#" class="nav_link">Contact</a>
+                <a href="#contact" class="nav_link">Contact</a>
           </li>
         </ul>
 
@@ -70,7 +70,7 @@
     <!-- main  -->
     <main>
 
-      <section class="hero">
+      <section class="hero" id="hero">
             <h1 class = "fire"> </h1>
             <h1 class = "nie"> Master Your Exams<br>Anytime, Anywhere</h1>
             
@@ -147,49 +147,114 @@
       </div>
       
   </section>
+ </main>
+
+ <div class="wrapper">
+ <section class="study-materials" id ="study-materials">
+     <div class="container">
+         <div class="image">
+             <img src="imagine/gmtmgvw6lbwekk0rsnof.jpg" alt="Books and notes on a table">
+         </div>
+         <div class="content">
+             <h1>Complete Set of <br>Study Materials and <br>Tests</h1>
+             <p>Access a wide range of study guides, practice tests,<br>and focused materials tailored to your exam.</p>
+         </div>
+     </div>
+ </section>
+
+ <section class="live-sessions">
+     <div class="container">
+         <div class="image"id="deq">
+             <img src="imagine/a6lq20s9iclkhyummjh4.jpg" alt="Live sessions">
+         </div>
+         <div class="content2" >
+             <h1>Expert-Led Live and <br>Recorded Sessions</h1>
+             <p>Attend live sessions or watch recorded classes by top educators, available <br>anytime to fit your schedule.</p>
+         </div>
+         
+     </div>
+ </section>
+
+</div>
+
+<div class="wrapper2">
+<section class ="contact" id = "contact">
+<div class="contact-form">
+ <h2>Contact us for more information.</h2>
+ <h1>Get in Touch</h1>
+ <p>We're here to help you.</p>
+ <form action="#" method="POST">
+     <label for="first-name">First Name</label>
+     <input type="text" id="first-name" name="first-name" required>
+     
+     <label for="email">Email</label>
+     <input type="email" id="email" name="email" required>
+     
+     <label for="message">Message</label>
+     <textarea id="message" name="message" rows="4" required></textarea>
+     
+     <div class="terms">
+         <input type="checkbox" id="terms" name="terms" required>
+         <label for="terms">I accept the terms</label>
+     </div>
+     
+     <button type="submit">Submit</button>
+ </form>
+</div>
+
+</section>
+</div>
 
 
+<div class="wrapper3">
+<footer>
+  <div class="footer-left">
+      © Copyright 2024, All Rights Reserved
+  </div>
+  <div class="footer-right">
+      <a href="#">Support</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Privacy Policy</a>
+  </div>
+</footer>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const links = document.querySelectorAll('.nav_link');
 
-    </main>
+      links.forEach(link => {
+          link.addEventListener('click', function(event) {
+              // Prevent the default action
+              event.preventDefault();
 
+              // Get the target section's ID from the href attribute
+              const targetId = this.getAttribute('href').substring(1);
+              const targetSection = document.getElementById(targetId);
 
+              if (targetSection) {
+                  // Scroll to the target section smoothly
+                  targetSection.scrollIntoView({
+                      behavior: 'smooth'
+                  });
+              } else if (targetId === 'home') {
+                  // Scroll to the top of the page if 'home' is the target
+                  window.scrollTo({
+                      top: 0,
+                      behavior: 'smooth'
+                  });
+              } else if (targetId === 'about') {
+                  // Scroll to the hero section if 'about' is the target
+                  
+                  if (heroSection) {
+                      heroSection.scrollIntoView({
+                          behavior: 'smooth'
+                      });
+                  }
+              }
+          });
+      });
+  });
+</script>
 
-    <script>
-      
-      document.addEventListener('DOMContentLoaded', function() {
-    const links = document.querySelectorAll('.nav_link');
-
-    links.forEach(link => {
-        link.addEventListener('click', function(event) {
-            // Prevent the default action
-            event.preventDefault();
-
-            // Get the target section's ID from the href attribute
-            const targetId = this.getAttribute('href').substring(1);
-            const targetSection = document.getElementById(targetId);
-
-            if (targetSection) {
-                // Scroll to the target section smoothly
-                targetSection.scrollIntoView({
-                    behavior: 'smooth'
-                });
-            } else if (targetId === 'home') {
-                // Scroll to the top of the page if 'home' is the target
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
-});
-
-      
-
-
-
-
-      
-  </script>
   </body>
 </html>
